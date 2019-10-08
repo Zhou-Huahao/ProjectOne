@@ -1,4 +1,4 @@
-package com.stx.share.demo;
+package com.shuangtixi.tianyi.zhh;
 
 import java.util.Scanner;
 
@@ -129,10 +129,11 @@ public class VehicleManager {
     public static void main(String[] args) {
     	// to-do: 创建VehicleManager对象，调用start方法开始系统
 
+        Menu m=new Menu();
+        m.User();
 
-
-        VehicleManager manager = new VehicleManager();
-        manager.start();
+//        VehicleManager manager = new VehicleManager();
+//        manager.start();
 
     }
 
