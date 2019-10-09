@@ -1,10 +1,11 @@
-package oracle;
+package com.shuangtixi.tianyi.zhh;
 import java.util.Scanner;
 public class tuser {
-user[] us=new user[20];
-Scanner sc=new Scanner(System.in);
+    VehicleManager vm=new VehicleManager();
+    user[] us=new user[20];
+    Scanner sc=new Scanner(System.in);
        public void ttuser() {
-        tuser ub = new tuser();
+       tuser ub = new tuser();
         boolean con = true;
         while (con) {
             System.out.println("1.登录 2.注册 3.退出");
@@ -37,6 +38,7 @@ Scanner sc=new Scanner(System.in);
          for (int i = 0; i<us.length; i++){
              if (us[i]!=null&&us[i].getName().equals(name)&&us[i].getPassword().equals(password)){
                  System.out.println("登陆成功");
+                 vm.start();
                  break;}
              if (us[i]==null||i==us.length-1){
                  System.out.println("登陆失败");

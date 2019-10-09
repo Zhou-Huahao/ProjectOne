@@ -51,7 +51,7 @@ public class VehicleManager {
                    break;
                case"4":
                    canContinue=false;
-                   System.out.println("退出成功，再见");
+                   System.out.println("退出成功，再见!");
                     break;
                 default:
                     System.out.println("输入错误，请重新输入");
@@ -129,8 +129,8 @@ public class VehicleManager {
     public static void main(String[] args) {
     	// to-do: 创建VehicleManager对象，调用start方法开始系统
 
-        Menu m=new Menu();
-        m.User();
+        tuser m=new tuser();
+        m.ttuser();
 
 //        VehicleManager manager = new VehicleManager();
 //        manager.start();
